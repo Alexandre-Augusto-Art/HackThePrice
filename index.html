@@ -814,7 +814,7 @@ const MATRIX = 5;               // dimensão da grade (5 x 5)
 const SEQUENCES = [
   { seq: ['55','1C'], discount: 5, label: '5%' },
   { seq: ['1C','1C','E9'], discount: 10, label: '10%' },
-  { seq: ['BD','E9','55'], discount: 20, label: '20%' }
+  { seq: ['BD','E9','55'], discount: 15, label: '15%' }
 ];
 const BUFFER_MAX = 8;           // tamanho do buffer (igual ao maior seq)
 const CODES  = ['1C','55','BD','E9'];
@@ -970,7 +970,7 @@ function renderHacks() {
   list.innerHTML='';
   const icons=[`<svg width='32' height='32' viewBox='0 0 32 32'><polygon points='16,4 28,20 4,20' fill='#eaff00'/></svg>`,`<svg width='32' height='32' viewBox='0 0 32 32'><polygon points='16,8 26,22 6,22' fill='#eaff00'/></svg>`,`<svg width='32' height='32' viewBox='0 0 32 32'><polygon points='16,12 24,24 8,24' fill='#eaff00'/></svg>`];
   const names=['DESCONTO_V1','DESCONTO_V2','DESCONTO_V3'];
-  const descs=['Desconto de 5% na venda','Desconto de 10% na venda','Desconto de 20% na venda'];
+  const descs=['Desconto de 5% na venda','Desconto de 10% na venda','Desconto de 15% na venda'];
   let completed=[]; if(window._bp_completedArr) completed=window._bp_completedArr;
   SEQUENCES.forEach((seq,i)=>{
     if(completed.includes(i)){
